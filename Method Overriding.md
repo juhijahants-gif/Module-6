@@ -1,34 +1,36 @@
 # 🐟 Method Overriding-Fish and Shark Class Inheritance in Python
 
 ## 🧠 AIM:
-To write a Python program that demonstrates class inheritance by creating a parent class `Fish` with a method `type`, and a child class `Shark` that overrides the `type` method.
+To write a Python program that demonstrates class inheritance by creating a parent class Fish with a method type, and a child class Shark that overrides the type method.
 
 ## 📋 ALGORITHM:
 
-1. Define the `Fish` class with a method named `type()` that prints `"fish"`.
-2. Define the `Shark` class as a subclass of `Fish`, and override the `type()` method to print `"shark"`.
-3. Create an instance of the `Fish` class named `obj_goldfish`.
-4. Create an instance of the `Shark` class named `obj_hammerhead`.
-5. Use a `for` loop to iterate over both objects.
-6. Within the loop, call the `type()` method using the loop variable.
-7. Output will demonstrate method overriding: printing `"fish"` and `"shark"` accordingly.
+1. Define the Fish class with a method named type() that prints "fish".
+2. Define the Shark class as a subclass of Fish, and override the type() method to print "shark".
+3. Create an instance of the Fish class named obj_goldfish.
+4. Create an instance of the Shark class named obj_hammerhead.
+5. Use a for loop to iterate over both objects.
+6. Within the loop, call the type() method using the loop variable.
+7. Output will demonstrate method overriding: printing "fish" and "shark" accordingly.
 
 ## 💻 PROGRAM:
 ```
 class Fish:
-    def type(self):
-        return "I am a fish."
+       def type(self):
+           print("fish")
 class Shark(Fish):
-    def type(self):
-        return "I am a shark, a type of fish."
-fish = Fish()
-print(fish.type())  # Output: I am a fish.
+	   def type(self):
+	       print("shark")
 
-shark = Shark()
-print(shark.type())  # Output: I am a shark, a type
+obj_goldfish=Fish()
+obj_hammerhead=Shark()
+#Call the functions for fish and shark class using the objects
+obj_goldfish.type()
+obj_hammerhead.type()
 ```
 ## OUTPUT
-<img width="311" height="63" alt="Screenshot 2025-10-15 103016" src="https://github.com/user-attachments/assets/ad84fe28-8599-418f-8c0a-adc3eb252ddf" />
+![WhatsApp Image 2025-10-19 at 20 29 36_6bc6f810](https://github.com/user-attachments/assets/642edbb8-6d46-4d60-9eb6-357f2f79a786)
+
 
 ## RESULT
 The program successfully creates class inheritance
